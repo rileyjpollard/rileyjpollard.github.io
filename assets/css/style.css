@@ -1,0 +1,250 @@
+@charset "utf-8";
+/* CSS Document */
+.card {
+	display:inline-block;
+}
+body {
+	font-family: lato;
+	background: url(https://www.fg-a.com/wallpapers/white-marble-3-2018.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+#nav {
+	width: 85%;
+	background: #7FB5BA;
+	margin: 0 auto;
+	margin-top: 2em;
+	border-radius: .25em;
+	overflow: auto;
+}
+@media (max-width: 40em) {
+	#nav {
+		width: 95%;
+	}
+}
+#nav .clickr {
+	color: #000;
+	display: block;
+	text-align: right;
+	padding: .5em;
+	font-size: 1.25em;
+	display: none;
+}
+@media (max-width: 40em) {
+	#nav .clickr {
+		display: block;
+	}
+}
+#nav ul {
+	display: flex;
+	align-items: stretch;
+	margin: 0;
+	padding: 0;
+}
+@media (max-width: 40em) {
+	#nav ul {
+		flex-direction: column;
+		display: none;
+	}
+}
+#nav ul li {
+	list-style: none;
+	align-items: stretch;
+	flex: 1;
+	text-align: center;
+}
+#nav ul li:first-child a {
+	border-left: none;
+}
+#nav ul li:last-child a {
+	border-right: none;
+}
+#nav ul li.active a {
+	background: rgba(34, 34, 34, 0.55);
+	border-bottom: 1px solid teal;
+}
+#nav ul li a {
+	color: #000;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: 200;
+	padding: 1em 0;
+	display: block;
+	border-right: 1px solid rgba(0, 0, 0, 0.30000000000000004);
+	border-left: 1px solid rgba(255, 255, 255, 0.09999999999999998);
+}
+@media (max-width: 40em) {
+	#nav ul li a {
+		border-top: 1px solid rgba(0, 0, 0, 0.30000000000000004);
+		border-bottom: 1px solid rgba(255, 255, 255, 0.09999999999999998);
+	}
+}
+#nav ul li a:hover {
+	background: rgba(34, 34, 34, 0.55);
+	border-bottom: 3px solid #000;
+}
+.text {
+	color: #fff;
+	font-weight: 200;
+	text-align: center;
+}
+.text h1 {
+	font-weight: 200;
+	text-transform: uppercase;
+	color: #000;
+}
+.text a {
+	color: #fff;
+	text-decoration: none;
+}
+.text a:hover {
+	text-decoration: underline;
+}
+.mainContent {
+	overflow: hidden;
+	line-height: 25px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+.content-1 {
+	background-color: rgba(255,255,255,0.8);
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	padding: 3% 5%;
+	margin-bottom: 3%;
+}
+.content {
+	width: 100%;
+	float: left;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+.post-from {
+	font-style: italic;
+	color: #999;
+	font-size: 85%;
+}
+.footer {
+	width: 100%;
+	float: left;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	padding-left: 0;
+	background-color: rgba(0,0,0,0.5);
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	color: #FFF;
+}
+.footer p {
+	width: 91%;
+	margin: 2% auto;
+}
+@media only screen and (min-width : 10px) and (max-width : 700px){
+	.body {
+		clear: both;
+		margin: 0 auto;
+		padding:0;
+		width: 90%;
+		font-size: 90%;
+	}
+	.mainContent {
+		overflow: hidden;
+		line-height: 25px;
+		border-radius: 5px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		margin-top: 4%;
+		margin-bottom: 2%;
+	}
+	.content-1 {
+		background-color: rgba(255,255,255,0.8);
+		border-radius: 5px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		padding: 2% 5%;
+		margin-bottom: 4%;
+	}
+	.content {
+		width: 100%;
+		float: left;
+		border-radius: 5px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+	}
+	.post-from {
+		display: none;
+	}
+	.footer {
+		width: 100%;
+		float: left;
+		margin: 2% 0;
+		padding-left: 0;
+		background-color: rgba(0,0,0,0.3);
+		border-radius: 5px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		color: #FFF;
+	}
+	.footer p {
+		width: 86%;
+		margin: 2% auto;
+	}
+}
+.container {
+	max-width: 400px;
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+#contact h3 {
+	display: block;
+	font-size: 30px;
+	font-weight: 300;
+	margin-bottom: 10px;
+}
+#contact h4 {
+	margin: 5px 0 15px;
+	display: block;
+	font-size: 13px;
+	font-weight: 400;
+}
+#contact input[type="text"],#contact input[type="email"],#contact input[type="tel"],#contact input[type="url"],#contact textarea {
+	width: 100%;
+	border: 1px solid #ccc;
+	background: #FFF;
+	margin: 0 0 5px;
+	padding: 10px;
+}
+#contact input[type="text"]:hover,#contact input[type="email"]:hover,#contact input[type="tel"]:hover,#contact input[type="url"]:hover,#contact textarea:hover {
+	-webkit-transition: border-color 0.3s ease-in-out;
+	-moz-transition: border-color 0.3s ease-in-out;
+	transition: border-color 0.3s ease-in-out;
+	border: 1px solid #aaa;
+}
+#contact textarea {
+	height: 100px;
+	max-width: 100%;
+	resize: none;
+}
+#contact input:focus,#contact textarea:focus {
+	outline: 0;
+	border: 1px solid #aaa;
+}
+::-webkit-input-placeholder {
+	color: #888;
+}
+:-moz-placeholder {
+	color: #888;
+}
+::-moz-placeholder {
+	color: #888;
+}
+:-ms-input-placeholder {
+	color: #888;
+}
